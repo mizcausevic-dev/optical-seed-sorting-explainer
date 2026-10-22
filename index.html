@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="34-second sectional explainer of an optical seed sorter: singulation, bichromatic sensing, uncertain classification, and timed air ejection. Conceptual, not a certified design.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Optical seed-sorting machine · anatomy explainer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="title-block">
+      <p class="kicker">Agricultural technology</p>
+      <h1>Optical seed-sorting machine</h1>
+    </div>
+    <div class="badges" aria-label="Viewing conditions">
+      <span class="badge">Section · cover omitted</span>
+      <span class="badge">Enlarged scale</span>
+      <span class="badge" id="time-mode">Time compressed</span>
+      <span class="badge badge-schematic">Schematic overlays</span>
+    </div>
+  </header>
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <footer>
+    <p id="caption" aria-live="polite"></p>
+    <div class="controls">
+      <button type="button" id="play" aria-label="Play">Play</button>
+      <label class="scrub">
+        <span class="sr" id="frame-label">Frame 0 of 1019</span>
+        <input id="scrub" type="range" min="0" max="1019" value="0" aria-valuemin="0" aria-valuemax="1019">
+      </label>
+      <span id="frame-readout" class="readout">0000 / 1019</span>
+      <nav class="chapters" aria-label="Chapters">
+        <button type="button" data-frame="0">Reveal</button>
+        <button type="button" data-frame="150">Inspection</button>
+        <button type="button" data-frame="300">Signatures</button>
+        <button type="button" data-frame="510">Ejection</button>
+        <button type="button" data-frame="750">Outputs</button>
+      </nav>
+    </div>
+    <p class="disclaimer">
+      Conceptual explainer informed by Pasikatan and Dowell, Applied Spectroscopy Reviews 36(4), 399-416 (2001), a USDA-ARS review of optical methods for seeds with internal insects or fungi. The review supports the mechanism and its limits. It does not certify this drawing. Colors are explanatory overlays. No throughput, defect sensitivity, or food-safety certification is claimed. Detection and ejection are separate. Optical sorting cannot prove pathogen absence.
+    </p>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
