@@ -26,9 +26,11 @@ Selected sensor in this drawing: bichromatic reflectance, one visible band and o
 
 ## Live preview
 
+The site files are the root of the `pages` branch.
+
 https://mizcausevic-dev.github.io/optical-seed-sorting-explainer/
 
-The site is the root of the `pages` branch. Open that URL and scrub to frame 1019 for the held system view. `?frame=640` opens on the air pulse.
+In the repository settings, set Pages to deploy from the `pages` branch at `/`. Then open that URL and scrub to frame 1019 for the held system view. `?frame=640` opens on the air pulse.
 
 ## Run
 
